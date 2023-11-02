@@ -32,7 +32,7 @@ const jobController = (db) => {
 
             let companyId;
 
-            //Find the company id if exist.
+            //Find the company id if exists.
             await db
                 .collection('companies')
                 .where('name', '==', company_name)
