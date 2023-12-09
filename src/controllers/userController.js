@@ -44,6 +44,7 @@ const userController = (db, admin) => {
                 skills,
                 uid,
                 educations: [],
+                experiences: [],
                 userCompanyId,
                 createdAt: FieldValue.serverTimestamp(),
             };
