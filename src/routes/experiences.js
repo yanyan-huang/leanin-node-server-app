@@ -1,14 +1,14 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 module.exports = (db) => {
-    const experienceController = require('../controllers/experienceController')(
-        db
-    );
+  const experienceController = require("../controllers/experienceController")(
+    db,
+  );
 
-    router.post('/create', experienceController.createExperience);
+  router.post("/create", experienceController.createExperience);
 
-    router.delete('/:id', experienceController.deleteExperience);
+  router.delete("/:id", experienceController.deleteExperience);
 
-    return router;
+  return router;
 };
